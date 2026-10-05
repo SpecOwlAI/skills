@@ -1,0 +1,9 @@
+{
+  "name": "specowl",
+  "version": "0.1.0",
+  "description": "SpecOwl's skills for Claude Code, with the connection to SpecOwl: implement, write and refine tickets, find the project's docs and triage open questions.",
+  "author": {
+    "name": "SpecOwl"
+  },
+  "repository": "https://github.com/SpecOwlAI/skills"
+}

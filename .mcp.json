@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "specowl": {
+      "type": "http",
+      "url": "https://contextforge-na2o.onrender.com/mcp"
+    }
+  }
+}

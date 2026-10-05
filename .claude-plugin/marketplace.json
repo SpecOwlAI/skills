@@ -1,0 +1,14 @@
+{
+  "name": "specowl",
+  "owner": {
+    "name": "SpecOwl"
+  },
+  "description": "SpecOwl's plugin for Claude Code.",
+  "plugins": [
+    {
+      "name": "specowl",
+      "source": "./",
+      "description": "SpecOwl's skills for Claude Code, with the connection to SpecOwl: implement, write and refine tickets, find the project's docs and triage open questions."
+    }
+  ]
+}

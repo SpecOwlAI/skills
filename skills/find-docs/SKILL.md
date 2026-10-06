@@ -28,4 +28,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 
 When suggest_link isn't offered, the connection is read only. Search, read and cite the same way, and list in your answer the sections you would have suggested, each with its rule and reason.
 
-SpecOwl skills version 0.2.0.
+SpecOwl skills version 0.3.0.

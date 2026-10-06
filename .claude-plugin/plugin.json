@@ -1,6 +1,6 @@
 {
   "name": "specowl",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "SpecOwl's skills for Claude Code, with the connection to SpecOwl: implement, write, refine and test tickets, find the project's docs and triage open questions.",
   "author": {
     "name": "SpecOwl"

@@ -50,4 +50,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 
 When the write tools aren't offered, the connection is read only. Read the brief and the docs as you would otherwise, but start, report and change nothing. When the ticket has no check or a stale one, ask the user to run the check and list nothing. When it is in Idea, or Ready or a later column, say which move or question you would have asked. Otherwise your final message lists, by rule, each change you would have made (parts, questions with group and severity, links with reasons, rule changes), each marked as not made, then says a change needs read & write access. When there's nothing to change, say the ticket has no gaps you could close. When the user asks you to make a change anyway, say a change needs read & write access, and make none.
 
-SpecOwl skills version 0.3.0.
+SpecOwl skills version 0.3.1.

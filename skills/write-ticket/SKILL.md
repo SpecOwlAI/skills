@@ -55,4 +55,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 - A tech ticket's rule:
   "The server connects to the database through the pooler's transaction mode." Done when: with only the pooler's port reachable, the server starts and answers its health check.
 
-SpecOwl skills version 0.3.1.
+SpecOwl skills version 0.4.0.

@@ -41,4 +41,4 @@ The user asks for it, for a ticket or a project. implement-ticket starts it on i
 
 When the write tools aren't offered, the connection is read only. Read and search as you would otherwise, but start and change nothing. Your report lists, by ticket, the answers you would have given or suggested with their sources, the duplicates you would have proposed dismissing and the group changes you would have proposed, each marked as not made, then says a change needs read & write access.
 
-SpecOwl skills version 0.6.0.
+SpecOwl skills version 0.7.0.

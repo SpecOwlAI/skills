@@ -25,7 +25,7 @@ Write a SpecOwl ticket from the user's request, or from the conversation so far 
    Never write a guess as a part.
 7. Links: suggest_link each section you relied on to its rule, or to the whole ticket, with the reason it fits.
 8. Summary: show the ticket id, title, type, why, out of scope and the numbered rules with their done-whens. Say which rules have no docs, which questions you added, and whether you wrote the out of scope yourself. Make the changes the user asks for with update_ticket, update_rule and add_rule, writing them the same way.
-9. Into the sprint? End the summary by offering to refine the new ticket and plan it into the project's active sprint, naming the sprint (list_sprints); with no active sprint, offer only to refine it and say there is no active sprint to plan it into. On yes, go on as the refine-ticket skill says, with its step 11 for the sprint. Until the user says yes, the ticket stays in Idea.
+9. Into the sprint? End the summary by offering to refine the new ticket and plan it into the project's active sprint, naming the sprint (list_sprints); with no active sprint, offer only to refine it and say there is no active sprint to plan it into. On yes, go on as the refine-ticket skill says, with its step 11 for the sprint. Until the user says yes, the ticket stays in the column it starts in.
 
 ## Limits
 
@@ -56,4 +56,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 - A tech ticket's rule:
   "The server connects to the database through the pooler's transaction mode." Done when: with only the pooler's port reachable, the server starts and answers its health check.
 
-SpecOwl skills version 0.6.0.
+SpecOwl skills version 0.7.0.

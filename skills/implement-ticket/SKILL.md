@@ -72,4 +72,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 
 When the write tools aren't offered, the connection is read only. Don't start the ticket, report stages, record a plan, mark rules or steps or move the ticket; put the parts, evidence and questions you would have recorded in your final message, next to the report, with each rule's state (built, building or not started) and your plan's steps with theirs (done, started or open).
 
-SpecOwl skills version 0.7.1.
+SpecOwl skills version 0.8.0.

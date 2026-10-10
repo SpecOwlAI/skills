@@ -1,6 +1,6 @@
 # SpecOwl skills for Claude Code
 
-The SpecOwl plugin for Claude Code: 6 skills and the connection to SpecOwl. Version 0.7.1.
+The SpecOwl plugin for Claude Code: 8 skills and the connection to SpecOwl. Version 0.8.0.
 
 ## Install
 
@@ -14,7 +14,9 @@ The first time Claude Code uses the connection, a browser opens for you to sign 
 
 - `specowl:find-docs`
 - `specowl:implement-ticket`
+- `specowl:plan-epic`
 - `specowl:refine-ticket`
+- `specowl:review-roadmap`
 - `specowl:test-ticket`
 - `specowl:triage-questions`
 - `specowl:write-ticket`

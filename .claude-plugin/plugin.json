@@ -1,7 +1,7 @@
 {
   "name": "specowl",
-  "version": "0.7.1",
-  "description": "SpecOwl's skills for Claude Code, with the connection to SpecOwl: implement, write, refine and test tickets, find the project's docs and triage open questions.",
+  "version": "0.8.0",
+  "description": "SpecOwl's skills for Claude Code, with the connection to SpecOwl: implement, write, refine and test tickets, find the project's docs, triage open questions, plan an epic's tickets and review the roadmap.",
   "author": {
     "name": "SpecOwl"
   },

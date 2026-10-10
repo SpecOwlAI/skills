@@ -47,7 +47,7 @@ Every call that says "Only when the user asked you to." (such as move_status and
 SpecOwl refuses a text longer than its limit, counted in characters after trimming. Write within it the first time:
 - Stage (report_stage): up to 80 characters, on one line.
 - User's words (user_words): up to 500 characters.
-- Ticket (update_ticket): title up to 200 characters, why up to 2000 characters, out of scope up to 2000 characters.
+- Ticket (update_ticket): title up to 200 characters, description up to 2000 characters, out of scope up to 2000 characters.
 - Rule (update_rule, add_rule): up to 500 characters.
 - Rule part (set_rule_part): up to 500 characters.
 - Question (add_question): up to 500 characters.
@@ -59,4 +59,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 
 When the write tools aren't offered, the connection is read only. Read the brief and the docs as you would otherwise, but start, report and change nothing. When the ticket has no check or a stale one, ask the user to run the check and list nothing. When it counts as Idea, Ready or a later stage, say which move or question you would have asked. Asked to get it into the sprint, also name the moves and the sprint you would have made. Otherwise your final message lists, by rule, each change you would have made (parts, questions with group and severity, links with reasons, rule changes), each marked as not made, then says a change needs read & write access. When there's nothing to change, say the ticket has no gaps you could close. When the user asks you to make a change anyway, say a change needs read & write access, and make none.
 
-SpecOwl skills version 0.8.0.
+SpecOwl skills version 0.8.1.

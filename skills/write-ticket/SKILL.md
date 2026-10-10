@@ -14,7 +14,7 @@ Write a SpecOwl ticket from the user's request, or from the conversation so far 
 5. Create it with create_ticket:
    - Title: short, what changes.
    - Type: feature, bug, change or tech.
-   - Why: one to three sentences on the problem and who has it. An implementation detail the user insists on ("use Papa Parse for the CSV") goes here as a constraint, never in a rule.
+   - Description: what the ticket is about and the problem it solves, in one to three sentences. An implementation detail the user insists on ("use Papa Parse for the CSV") goes here as a constraint, never in a rule.
    - Out of scope: the user's words if they gave any; otherwise what a reader could expect that the request leaves out (neighbouring features, other platforms, follow-ups mentioned in passing). If nothing obvious is left out, write "Nothing beyond the request."
    - Rules: each one sentence with its done-when, written as below.
    If create_ticket refuses a field, nothing was written: fix it and call again. If it fails after the ticket exists, it names the ticket and the rules it made: tell the user and don't retry.
@@ -24,13 +24,13 @@ Write a SpecOwl ticket from the user's request, or from the conversation so far 
    - Blocker only when the rule can't be implemented at all without the answer.
    Never write a guess as a part.
 7. Links: suggest_link each section you relied on to its rule, or to the whole ticket, with the reason it fits.
-8. Summary: show the ticket id, title, type, why, out of scope and the numbered rules with their done-whens. Say which rules have no docs, which questions you added, and whether you wrote the out of scope yourself. Make the changes the user asks for with update_ticket, update_rule and add_rule, writing them the same way.
+8. Summary: show the ticket id, title, type, description, out of scope and the numbered rules with their done-whens. Say which rules have no docs, which questions you added, and whether you wrote the out of scope yourself. Make the changes the user asks for with update_ticket, update_rule and add_rule, writing them the same way.
 9. Into the sprint? End the summary by offering to refine the new ticket and plan it into the project's active sprint, naming the sprint (list_sprints); with no active sprint, offer only to refine it and say there is no active sprint to plan it into. On yes, go on as the refine-ticket skill says, with its step 11 for the sprint. Until the user says yes, the ticket stays in the column it starts in.
 
 ## Limits
 
 SpecOwl refuses a text longer than its limit, counted in characters after trimming. Write within it the first time:
-- Ticket (create_ticket, update_ticket): title up to 200 characters, why up to 2000 characters, out of scope up to 2000 characters.
+- Ticket (create_ticket, update_ticket): title up to 200 characters, description up to 2000 characters, out of scope up to 2000 characters.
 - Rule (create_ticket, add_rule, update_rule): up to 500 characters.
 - Rule part (set_rule_part): up to 500 characters.
 - Question (add_question): up to 500 characters.
@@ -56,4 +56,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 - A tech ticket's rule:
   "The server connects to the database through the pooler's transaction mode." Done when: with only the pooler's port reachable, the server starts and answers its health check.
 
-SpecOwl skills version 0.8.0.
+SpecOwl skills version 0.8.1.

@@ -9,7 +9,7 @@ Find what the project's docs say about a question, and say where each part of yo
 
 1. Search several ways. When you run this skill on its own, not as a step of another skill, first tell SpecOwl you are starting: start_skill with skill find-docs. Run search_docs once for each of these phrasings:
    - the key nouns of the rule or question ("invite expiry");
-   - the ticket's own words and their synonyms, from its title and why ("invitation", "pending member");
+   - the ticket's own words and their synonyms, from its title and description ("invitation", "pending member");
    - a heading-style phrasing, the way a spec would title the section ("Invites › Expiry", "Edge cases").
    A query of only common words ("how does it work") answers "No sections match." without searching: rephrase it with the words that matter. Search again with any term a hit teaches you.
 2. Conclude only after all of them miss. Say the docs don't cover it only when every phrasing came back with "No sections match." or with sections you read and rejected. Then list the queries you ran, each with its result: "No sections match." or the headings you rejected.
@@ -28,4 +28,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 
 When suggest_link isn't offered, the connection is read only. Search, read and cite the same way, and list in your answer the sections you would have suggested, each with its rule and reason.
 
-SpecOwl skills version 0.8.0.
+SpecOwl skills version 0.8.1.

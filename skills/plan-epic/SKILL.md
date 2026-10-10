@@ -21,7 +21,7 @@ An epic's forecast only sees the work that has tickets, so an epic with three of
    - The tickets outside the epic you offer to put in it.
    Aim for tickets of about 8 to 12 rules, and for about ten tickets in one proposal; when more is missing, say what is left and leave it for another run. When nothing is missing, say that the epic's tickets cover its description, propose none and stop. Otherwise end by asking which of them to write.
 9. Nothing before a yes. Create no ticket, and put no ticket in the epic, until the user says yes in chat. Only what they agreed to is written: a yes to some of the proposed tickets writes those and no others. A change they ask for is made to the proposal in chat, and you ask again. After a no, create nothing and stop. Anything short of a clear yes, such as a question, a comment or "looks good", is no yes yet: ask.
-10. Write them. On the user's yes, write each agreed ticket in the order proposed, as the write-ticket skill's steps 5 to 7 say: create_ticket with the project, the title, the type, the why, the out of scope, the rules with their done-whens and the epic; then its parts with set_rule_part and add_question, and its link suggestions with suggest_link. Leave out that skill's search for an existing ticket, its summary and its offer to get the ticket into the sprint: a new ticket starts in Idea and stays there. A ticket outside the epic that the user agreed to put in it goes there with update_ticket and its epic.
+10. Write them. On the user's yes, write each agreed ticket in the order proposed, as the write-ticket skill's steps 5 to 7 say: create_ticket with the project, the title, the type, the description, the out of scope, the rules with their done-whens and the epic; then its parts with set_rule_part and add_question, and its link suggestions with suggest_link. Leave out that skill's search for an existing ticket, its summary and its offer to get the ticket into the sprint: a new ticket starts in Idea and stays there. A ticket outside the epic that the user agreed to put in it goes there with update_ticket and its epic.
    - The epic was marked Done or deleted since your proposal: create_ticket refuses the ticket, naming the epic or saying it isn't one of the project's, and nothing is written. Quote the refusal, write no further ticket and stop.
    - create_ticket refuses a field: nothing was written, so fix it and call again.
    - It fails after the ticket exists: it names the ticket and the rules it made. Tell the user which, and don't retry.
@@ -30,7 +30,7 @@ An epic's forecast only sees the work that has tickets, so an epic with three of
 ## Limits
 
 SpecOwl refuses a text longer than its limit, counted in characters after trimming. Write within it the first time:
-- Ticket (create_ticket, update_ticket): title up to 200 characters, why up to 2000 characters, out of scope up to 2000 characters.
+- Ticket (create_ticket, update_ticket): title up to 200 characters, description up to 2000 characters, out of scope up to 2000 characters.
 - Rule (create_ticket): up to 500 characters.
 - Rule part (set_rule_part): up to 500 characters.
 - Question (add_question): up to 500 characters.
@@ -40,4 +40,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 
 When create_ticket isn't offered, the connection is read only. Start nothing, and read and propose as you would otherwise. After the proposal, say that writing the tickets needs read & write access, and create none, whatever the user answers.
 
-SpecOwl skills version 0.8.0.
+SpecOwl skills version 0.8.1.

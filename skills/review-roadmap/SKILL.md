@@ -45,4 +45,4 @@ Manage epics is a permission of the user's role in the project, not of your conn
 
 When the write tools aren't offered, the connection is read only: a note and a date suggestion would both be refused. Reading the roadmap is open to every connection, so start nothing, read as you would otherwise and give your findings in chat as "Without Manage epics" says, each marked as not written, then say that writing them needs read & write access.
 
-SpecOwl skills version 0.8.0.
+SpecOwl skills version 0.8.1.

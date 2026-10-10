@@ -43,4 +43,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 
 When the write tools aren't offered, the connection is read only. Start nothing, mark nothing and add no note. With a test environment given, carry the steps out there as you would otherwise; your final message lists each step as would pass, would fail (with what you saw) or left, each marked as not recorded, then says recording a result needs read & write access. With no test environment, list the steps and say you tested nothing.
 
-SpecOwl skills version 0.8.0.
+SpecOwl skills version 0.8.1.

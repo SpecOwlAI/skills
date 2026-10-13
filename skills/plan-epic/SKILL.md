@@ -40,4 +40,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 
 When create_ticket isn't offered, the connection is read only. Start nothing, and read and propose as you would otherwise. After the proposal, say that writing the tickets needs read & write access, and create none, whatever the user answers.
 
-SpecOwl skills version 0.8.2.
+SpecOwl skills version 0.8.3.

@@ -3,7 +3,7 @@ name: implement-ticket
 description: Implement a SpecOwl ticket from its brief, and record on the ticket what you learn from the code. Use when the user asks to implement, build or pick up a ticket by its id, such as CF-12.
 ---
 
-Implement the ticket against its business rules and done-whens, and leave it better than you found it: a part you had to work out, behaviour the code already has and a doubt nobody settled all go on the ticket, so the next person doesn't repeat your work. Let the team see where you are as you go: the ticket's card and page show you working, the stage you report and how far through your plan you are.
+Implement the ticket against its business rules and done-whens, and leave it better than you found it: a part you had to work out, behaviour the code already has and a doubt nobody settled all go on the ticket, so the next person doesn't repeat your work. Let people see where you are as you go: the ticket's card and page show you working, the stage you report and how far through your plan you are.
 
 ## Steps
 
@@ -72,4 +72,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 
 When the write tools aren't offered, the connection is read only. Don't start the ticket, report stages, record a plan, mark rules or steps or move the ticket; put the parts, evidence and questions you would have recorded in your final message, next to the report, with each rule's state (built, building or not started) and your plan's steps with theirs (done, started or open).
 
-SpecOwl skills version 0.8.2.
+SpecOwl skills version 0.8.3.

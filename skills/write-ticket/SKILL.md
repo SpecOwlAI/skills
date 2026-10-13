@@ -18,7 +18,7 @@ Write a SpecOwl ticket from the user's request, or from the conversation so far 
    - Out of scope: the user's words if they gave any; otherwise what a reader could expect that the request leaves out (neighbouring features, other platforms, follow-ups mentioned in passing). If nothing obvious is left out, write "Nothing beyond the request."
    - Rules: each one sentence with its done-when, written as below.
    If create_ticket refuses a field, nothing was written: fix it and call again. If it fails after the ticket exists, it names the ticket and the rules it made: tell the user and don't retry.
-6. Parts: read the new ticket with get_ticket_brief for its rule ids and the team's question groups. Set each part (trigger, who, data, outcome, exceptions) that the request or the docs state with set_rule_part. For every other part, add_question on that rule and part, in the question group whose people can answer it:
+6. Parts: read the new ticket with get_ticket_brief for its rule ids and the organisation's question groups. Set each part (trigger, who, data, outcome, exceptions) that the request or the docs state with set_rule_part. For every other part, add_question on that rule and part, in the question group whose people can answer it:
    - You have a reasonable guess: severity default, with the guess as its suggested default.
    - You have none: severity needs.
    - Blocker only when the rule can't be implemented at all without the answer.
@@ -56,4 +56,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 - A tech ticket's rule:
   "The server connects to the database through the pooler's transaction mode." Done when: with only the pooler's port reachable, the server starts and answers its health check.
 
-SpecOwl skills version 0.8.2.
+SpecOwl skills version 0.8.3.

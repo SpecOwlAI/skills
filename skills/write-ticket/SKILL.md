@@ -3,14 +3,18 @@ name: write-ticket
 description: Write a SpecOwl ticket close to Ready from a request or the conversation, with rules, done-whens, out of scope, parts and questions. Use when the user asks to write, create or file a ticket, or to turn the conversation into one.
 ---
 
-Write a SpecOwl ticket from the user's request, or from the conversation so far when they ask to turn it into one. Create it straight away and then show the user what you created; don't wait for them to confirm a draft.
+Write a SpecOwl ticket from the user's request, or from the conversation so far when they ask to turn it into one. Create it straight away and then show the user what you created; don't wait for them to confirm a draft. The one exception is a request too big for one ticket: you propose a split first (step 4).
 
 ## Steps
 
 1. Project: tell SpecOwl you are starting with start_skill, skill write-ticket. Then use the project the request or the repo points to (list_projects lists them). Ask only when more than one fits.
 2. Existing tickets: search list_tickets for the request's key words. If one may already cover the request, show it and let the user pick it or go on.
 3. Docs: search and read them as the find-docs skill says: search_docs on the request's key terms, their synonyms and a heading-style phrasing, and read the sections you rely on with get_doc_section. Use the docs' own terms in the ticket, and quote nothing you didn't read. Finding no relevant section is normal for a new feature: go on, and say so in your summary.
-4. Too vague for even one testable rule ("make exports better")? Ask the user the one question that unlocks a rule, then go on. This is the only time you wait before creating.
+4. Before you create, size the request. These are the only times you wait before creating:
+   - Too vague for even one testable rule ("make exports better")? Ask the user the one question that unlocks a rule, then go on.
+   - Too big for one ticket: it needs more than 12 rules, or it mixes two features a person would build and test apart? Don't write one oversized ticket. Propose a split in chat, in one message, with nothing written yet: the tickets numbered, each with a title, a type and its rules, each one sentence with its done-when, written as below. Aim for about 8 to 12 rules a ticket and at most about ten tickets; when more is needed, say what is left for another run. End by asking which of them to write.
+   - Create nothing until the user says yes in chat, and then only what they agreed to: a yes to some of the tickets writes those and no others. A change they ask for is made to the proposal in chat, and you ask again. Anything short of a clear yes, such as a question or "looks good", is no yes yet: ask. After a no, create nothing and stop.
+   - On the yes, write each agreed ticket in the order proposed with steps 5 to 7, then give one summary of them all as step 8 says, each with its id, and end it with step 9's offer for each of them.
 5. Create it with create_ticket:
    - Title: short, what changes.
    - Type: feature, bug, change or tech.
@@ -41,6 +45,7 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 - One plain sentence about one behaviour. A rule with "and then", or with two outcomes, is two rules.
 - Say what happens, not how it's built: no file names, tables, endpoints or code. A tech ticket may state technical behaviour that a developer or the system can observe.
 - Give each rule a done-when a tester can check by observing it: what they do and what they see.
+- One ticket, one feature, of about 8 to 12 rules: that size is easiest to build and review. A small request, such as most bugs, needs fewer, so never pad a ticket. Splitting a compound rule in two can take a ticket past 12: then split the ticket too, as step 4 says.
 
 ## Examples
 
@@ -48,6 +53,9 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
   "When a user exports a report, it downloads as CSV and the team owner gets an email."
   → "When a user exports a report, it downloads as a CSV file." Done when: exporting a report with 3 rows downloads a CSV with a header and 3 rows.
   → "When a report is exported, the team owner gets an email naming who exported it." Done when: after an export, the owner has one email with the exporter's name.
+- A request too big for one ticket, split before creating:
+  "Customers can return an order for store credit, and the shop sends a monthly newsletter." Two features, built and tested apart, with about 9 rules for returns and 6 for the newsletter.
+  → Proposed in chat: 1. "Return an order for store credit" (feature, its 9 rules); 2. "Monthly newsletter" (feature, its 6 rules). Created only after the user says which to write.
 - An implementation detail, rewritten as behaviour:
   "Add a column to the invites table and set it in the mailer."
   → "The team page shows when each pending invite was sent." Done when: an invite sent today shows "sent today" on the team page.
@@ -56,4 +64,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 - A tech ticket's rule:
   "The server connects to the database through the pooler's transaction mode." Done when: with only the pooler's port reachable, the server starts and answers its health check.
 
-SpecOwl skills version 0.8.3.
+SpecOwl skills version 0.9.0.

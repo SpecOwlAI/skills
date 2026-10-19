@@ -8,7 +8,7 @@ An epic's forecast only sees the work that has tickets, so an epic with three of
 ## Steps
 
 1. Start. Tell SpecOwl you are starting: start_skill with skill plan-epic. Then use the project the request or the repo points to (list_projects lists them). Ask only when more than one fits.
-2. The epic. Read the project's epics with list_epics and find the one the user named, by its name ignoring case. When the project has no epic of that name, or the user named none, list the epics in Idea and In progress by name and ask which one. Plan one epic per run: asked for several, plan the first and say each of the others takes a run of its own.
+2. The epic. Read the project's epics with list_epics and find the one the user named, by its name ignoring case. When it isn't among them and the answer has a cursor, call list_epics again with that cursor until you find it or none is left. When the project has no epic of that name, or the user named none, list the epics in Idea and In progress by name and ask which one. Plan one epic per run: asked for several, plan the first and say each of the others takes a run of its own.
 3. Done? When the epic's status is Done, say that it is Done and takes no tickets, propose nothing and stop; ask nothing about its scope. Its status alone decides, whatever its tickets' statuses: a Done epic with open tickets still takes none, and an epic in Idea or In progress whose tickets are all Done is planned like any other. You never change an epic's status, and no tool does.
 4. Its tickets. Call list_tickets with the project and the epic: it then returns only that epic's tickets, all of them. Read each one's rules with get_ticket_brief, a Done ticket's too, so you know what the epic already covers.
 5. Docs. Search the docs on the epic as the find-docs skill says: its name, the key terms of its description and of its tickets, their synonyms and a heading-style phrasing, and read each section you rely on in full with get_doc_section. Finding no section on the epic is normal: go on from its description and its tickets alone, and say in your proposal that no docs section was found.
@@ -40,4 +40,4 @@ SpecOwl refuses a text longer than its limit, counted in characters after trimmi
 
 When create_ticket isn't offered, the connection is read only. Start nothing, and read and propose as you would otherwise. After the proposal, say that writing the tickets needs read & write access, and create none, whatever the user answers.
 
-SpecOwl skills version 0.9.0.
+SpecOwl skills version 0.9.1.

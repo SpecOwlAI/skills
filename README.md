@@ -1,6 +1,6 @@
 # SpecOwl skills for Claude Code
 
-The SpecOwl plugin for Claude Code: 8 skills and the connection to SpecOwl. Version 0.9.0.
+The SpecOwl plugin for Claude Code: 8 skills and the connection to SpecOwl. Version 0.9.1.
 
 ## Install
 

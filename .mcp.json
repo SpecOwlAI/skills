@@ -2,7 +2,7 @@
   "mcpServers": {
     "specowl": {
       "type": "http",
-      "url": "https://contextforge-na2o.onrender.com/mcp"
+      "url": "${SPECOWL_URL:-https://contextforge-na2o.onrender.com}/mcp"
     }
   }
 }
